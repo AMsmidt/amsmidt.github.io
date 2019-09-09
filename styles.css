@@ -1,3 +1,12 @@
+body{
+    counter-reset: my-sec-counter;
+}
+
+h2::before {
+    counter-increment: my-sec-counter;
+    content: "Section " counter(my-sec-counter) ". ";
+} 
+
 h1 {
     color: red;
 }
